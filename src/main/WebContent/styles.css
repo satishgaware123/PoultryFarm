@@ -1,0 +1,52 @@
+/* Example CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2e8b57; /* Dark green color */
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center align the links */
+    padding: 40px 0; /* Increased vertical padding for more height */
+    position: fixed; /* Fix it at the bottom of the page */
+    width: 100%; /* Make it full width */
+    bottom: 0; /* Stick it to the bottom of the page */
+    border-radius: 20px 20px 0 0; /* Round only the top-left and top-right corners */
+}
+
+/* Navigation links inside the footer */
+footer nav ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    display: inline; /* Display links in a row */
+    margin-right: 20px; /* Add space between links */
+}
+
+footer nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Set font size */
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline; /* Underline links when hovered */
+}
