@@ -4,6 +4,7 @@ body {
     background-color: #f0f8ff; /* Light blue background */
     margin: 0;
     padding: 0;
+    padding-bottom: 120px; /* Make space for the footer */
 }
 
 h1 {
@@ -17,16 +18,51 @@ p {
     color: #333;
 }
 
+/* Owner Section Styling */
+.owner {
+    display: flex;
+    flex-direction: column; /* Align the content vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    margin-top: 60px;
+    min-height: 300px; /* Ensure there's enough space */
+}
+
+.owner-photo {
+    width: 150px;  /* Adjust photo size */
+    height: 150px; /* Adjust photo size */
+    border-radius: 50%;  /* Make the photo circular */
+    border: 3px solid #333; /* Add a border around the photo */
+}
+
+.owner-name {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px; /* Add space between photo and name */
+}
+
+.owner-title {
+    font-size: 18px;
+    color: #777;  /* Lighter color for the title */
+    margin-top: -10px;
+}
+
 /* Footer Styling */
 footer {
     background-color: #333; /* Dark background */
     color: white; /* White text color */
-    text-align: center; /* Center align the links */
-    padding: 40px 0; /* Increased vertical padding for more height */
+    padding: 40px 0; /* Vertical padding for footer */
     position: fixed; /* Fix it at the bottom of the page */
     width: 100%; /* Make it full width */
     bottom: 0; /* Stick it to the bottom of the page */
     border-radius: 20px 20px 0 0; /* Round only the top-left and top-right corners */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Navigation links inside the footer */
@@ -49,4 +85,36 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     text-decoration: underline; /* Underline links when hovered */
+}
+
+/* Address Section Styling inside the Footer */
+footer .address {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+footer .address h3 {
+    font-size: 20px;
+    color: #ffcc00; /* Yellow color for title */
+    margin-bottom: 10px;
+}
+
+footer .address p {
+    font-size: 14px;
+    color: #ddd; /* Light gray color for the address */
+}
+
+/* Style for the Google Maps link */
+.map-link {
+    color: #08e9ff; /* Change text color to orange */
+    text-decoration: none; /* Remove underline from the link */
+    padding: 5px 10px; /* Add some padding */
+  /*   background-color: rgba(255, 165, 0, 0.2); Light orange background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.map-link:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
