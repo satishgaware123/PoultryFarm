@@ -7,14 +7,35 @@
     <title>Gaware Poultry Farm</title>
 </head>
 <body>
-    <h1>Welcome to Gaware Poultry Farm</h1>
-    <p>This is a simple web page created as a demo.</p>
+    <header>
+        <div class="header-container">
+            <h1>Welcome to Gaware Poultry Farm</h1>
+            <div class="dropdowns">
+                <!-- Services Button -->
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="#">Boiler Chicken</a>
+                        <a href="#">Desi Chicken</a>
+                        <a href="#">Eggs</a>
+                    </div>
+                </div>
 
-    <!-- 3D Image of Hens 
-    <div class="hen-3d-image">
-        <img src="images/homePage.jpg" alt="3D Image of Hens" class="hen-image">
-    </div>
--->
+                <!-- User Profile Button -->
+                <div class="dropdown">
+                    <button class="dropbtn">User Profile</button>
+                    <div class="dropdown-content">
+                        <a href="#">My Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <p>आम्ही गुणवत्तेवर विश्वास ठेवतो, प्रमाणावर नाही.</p>
+
     <!-- Owner Section -->
     <div class="owner">
         <img src="images/my photo.jpg" alt="Owner Photo" class="owner-photo">
@@ -24,7 +45,11 @@
 
     <!-- Footer with navigation links -->
     <footer>
+        <!-- Left Image -->
+        <img src="images/left-image.png" alt="Left Image" class="footer-image left">
+
         <div class="footer-content">
+            <!-- Navigation Links -->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -33,7 +58,7 @@
                 </ul>
             </nav>
 
-            <!-- Address Section inside the Footer -->
+            <!-- Address Section -->
             <div class="address">
                 <h3>Address</h3>
                 <p>At Post Mohara, Tq - Dist - Aurangabad, Tq - Kannad, Pincode 431104</p>
@@ -42,6 +67,11 @@
                 </a>
             </div>
         </div>
+
+        <!-- Right Image -->
+        <img src="images/right-image.png" alt="Right Image" class="footer-image right">
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

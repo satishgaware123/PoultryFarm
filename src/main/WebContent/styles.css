@@ -4,11 +4,81 @@ body {
     background-color: #f0f8ff; /* Light blue background */
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column; /* Flex layout for vertical alignment */
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
 }
 
 h1 {
-    text-align: center;
     color: #2e8b57; /* Dark green color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section with Dropdown */
+header {
+    padding: 20px;
+    background-color: #ffdb1e; /* Add background for the header */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between welcome text and buttons */
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+/* Smaller dropdown button */
+.dropbtn {
+    background-color: #2e8b50;
+    color: white;
+    padding: 8px 12px; /* Reduced padding */
+    font-size: 14px; /* Smaller font size */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Slight rounding for a smaller button */
+}
+
+.dropbtn:hover {
+    background-color: #3c9a6d;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px; /* Reduced padding for dropdown links */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown container styling */
+.dropdowns {
+    display: flex;
+    gap: 10px; /* Reduced gap between buttons */
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
 }
 
 p {
@@ -47,7 +117,6 @@ p {
     color: #777;  /* Lighter color for the title */
     margin-top: -10px;
 }
-
 /* Poultry Farm Photos Section (About Us) */
 .farm-photos {
     display: flex;
@@ -69,22 +138,20 @@ p {
 .farm-photo:hover {
     transform: scale(1.05); /* Zoom in effect when hovered */
 }
-
 /* Footer Styling */
 footer {
     background-color: #333; /* Dark background */
     color: white; /* White text color */
     padding: 40px 0; /* Vertical padding for footer */
-    position: fixed; /* Fix it at the bottom of the page */
-    width: 100%; /* Make it full width */
-    bottom: 0; /* Stick it to the bottom of the page */
-    border-radius: 20px 20px 0 0; /* Round only the top-left and top-right corners */
+    text-align: center;
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push the footer to the bottom if content is short */
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensure it appears above the images */
 }
 
 /* Navigation links inside the footer */
@@ -130,7 +197,7 @@ footer .address p {
 
 /* Style for the Google Maps link */
 .map-link {
-    color: #08e9ff; /* Change text color to orange */
+    color: #08e9ff; /* Change text color to blue */
     text-decoration: none; /* Remove underline from the link */
     padding: 5px 10px; /* Add some padding */
     border-radius: 5px; /* Rounded corners */
@@ -138,4 +205,20 @@ footer .address p {
 
 .map-link:hover {
     text-decoration: underline; /* Add underline on hover */
+}
+
+/* Footer Image Styling */
+.footer-image {
+    position: absolute;
+    bottom: 10px; /* Position near the bottom of the footer */
+    width: 50px; /* Small size for the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-image.left {
+    left: 20px; /* Position on the left side */
+}
+
+.footer-image.right {
+    right: 20px; /* Position on the right side */
 }
